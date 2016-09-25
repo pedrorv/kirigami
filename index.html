@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Projeto LCG - Gerador de Kirigamis</title>
+    <script src="js/d3.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/TrackballControls.js"></script>
+    <script src="js/pvector.js"></script>
+    <script src="js/halfedge.js"></script>
+    <script src="js/relax.js"></script>
+    <script src="js/constraints.js"></script>
+    <script src="js/delaunay.js"></script>
+    <script src="js/numeric-1.2.6.min.js"></script>
+    <script src="js/papermodel.js"></script>
+    <script src="js/hexagonalgrid.js"></script>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/estilo.css" rel="stylesheet" />
+    <link href="css/config.css" rel="stylesheet" />
+</head>
+<meta charset="UTF-8">
+<body>
+    <header>
+        <div class="header">
+            <h1>KirigamiJS</h1>
+            <h2><a href=""></a>Sobre</h2>
+        </div>
+    </header>
+    <div class="d3int">
+        <div id="svgHolder"></div>
+        <div id="btns">
+          <button type="button" id="json">3D Model</button>
+          <!-- <button type="button" id="jsonEdges">Edges Interaction</button> -->
+          <button type="button" id="resetGrid">Reset Grid</button>
+          <button type="button" id="addPattern">Add Pattern</button>
+          <button type="button" id="resetPatterns">Reset Patterns</button>
+          <button type="button" id="rotatePatterns">Rotate Patterns</button>
+        </div>
+    </div>
+    <script src="js/patterns.js"></script>
+    <script src="js/d3interface.js"></script>
+    <script src="js/threeinterface.js"></script>
+    <script src="js/buttonsfunctions.js"></script>
+    <script type="text/javascript">
+
+    init();
+    animate();
+    initInterface();
+
+    drawingInterface();
+
+    </script>
+</body>
+</html>
